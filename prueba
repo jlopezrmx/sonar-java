@@ -1,0 +1,27 @@
+package mx.fds.beans;
+
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class BeanCategoria {
+	String cDescripcion;
+	List<BeanPregunta> preguntas;
+	
+	public String getcDescripcion() {
+		return cDescripcion;
+	}
+	public void setcDescripcion(String cDescripcion) {
+		this.cDescripcion = cDescripcion;
+	}
+	public List<BeanPregunta> getPreguntas() {
+		return preguntas;
+	}
+	public void setPreguntas(List<BeanPregunta> preguntas) {
+		this.preguntas = preguntas;
+	}
+	
+	
+	
+}
